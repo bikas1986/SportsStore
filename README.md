@@ -3,21 +3,13 @@ My first AngularJS app
 
 I have used MongoDB as NoSQL database.
 
+MongoDB script
+----------------------------------------------------------
 
 
-> show dbs
-SportsStore  0.078GB
-Test         0.078GB
-admin        (empty)
-local        0.078GB
-> use SportsStore
-switched to db SportsStore
-> show collections
-products
-system.indexes
+use SportsStore
 
 
-> db.products.find().pretty()
 var products = [{
 	"name" : "Kayak",
 	"description" : "A boat for one person",
