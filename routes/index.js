@@ -107,7 +107,7 @@ router.get('/products', function(req, res, next) {
     var findDocuments = function(db, callback){
         var collection = db.collection('products');
         collection.find({}).toArray(function(err, data){
-            console.log('Found the following data:: \n '+data);
+            console.log('Found the following data:: \n '+JSON.stringify(data));
             callback(data);
         })
     }
@@ -119,6 +119,7 @@ router.get('/products', function(req, res, next) {
         }
         findDocuments(db, function(data){
             db.close();
+
             res.send(data);
         })
     });

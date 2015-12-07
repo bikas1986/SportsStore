@@ -6,7 +6,7 @@
     <div class="navbar-text">
         <b>Your cart:</b>
         {{itemCount()}} item(s),
-        {{total() | currency}}
+        {{total() | currency:"&#8377"}}
     </div>
-    <a class="btn btn-default navbar-btn">Checkout</a>
+    <a href="#/checkout" class="btn btn-default navbar-btn">Checkout</a>
 </div>
